@@ -1,0 +1,73 @@
+\documentclass[12pt, a4paper, oneside]{article}
+\usepackage[english]{babel}
+\usepackage{xcolor,listings}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsfonts}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+\begin{document}
+\title{STAT345: Homework 8}
+\author{Jordan Medlock}
+\date{November 09, 2014}
+\maketitle
+
+\section*{Problem 1}
+\subsection*{a}
+$Z = \frac{\overbar{x}-\mu_0}{\sigma/\sqrt{n}}$\\
+$Z = \frac{19.8889-20}{0.75/\sqrt{10}}$\\
+$Z = -0.4684387308$
+$p-value = $
+
+\subsection*{b}
+$z_\frac{\alpha}{2}\frac{s}{\sqrt{n}} = 1$\\
+$1.96(\frac{2}{\sqrt{n}}) = 1$\\
+$1.96(2) = \sqrt{n}$\\
+$1.96(2)^2 = n$\\
+$15.3664 = n$\\
+$n = 16$
+\section*{Problem 2}
+\subsection*{a}
+$\overbar{x} = 65.57725$\\
+$s = 4.225464$\\
+$CI = [\overbar{x} - z_\frac{\alpha}{2}\frac{s}{\sqrt{n}},\overbar{x} + z_\frac{\alpha}{2}\frac{s}{\sqrt{n}}]$\\
+$CI = [65.57725 - 1.645\frac{4.225464}{\sqrt{16}},65.57725 + 1.645\frac{4.225464}{\sqrt{16}}]$\\
+$CI = [65.57725 - 1.73772207,65.57725 + 1.73772207]$\\
+$CI = [63.83952793,67.31497207]$\\
+
+We are 90\% sure that the population's mean is between 63.83952793 and 67.31497207.
+
+\subsection*{b}
+$\overbar{x} = 65.57725$\\
+$s = 4.225464$\\
+$CI = [\overbar{x} - z_\frac{\alpha}{2}\frac{s}{\sqrt{n}},\overbar{x} + z_\frac{\alpha}{2}\frac{s}{\sqrt{n}}]$\\
+$CI = [65.57725 - 1.96\frac{4.225464}{\sqrt{16}},65.57725 + 1.96\frac{4.225464}{\sqrt{16}}]$\\
+$CI = [65.57725 - 2.07047736,65.57725 + 2.07047736]$\\
+$CI = [63.50677264,67.64772736]$\\
+
+We are 95\% sure that the population's mean is between 63.50677264 and 67.31497207.
+
+\section*{Problem 3}
+\subsection*{a}
+$\hat{p} = \frac{x}{n}$\\
+$\hat{p} = \frac{823}{1000}$\\
+$\hat{p} = 0.823$\\
+$CI = [\hat{p} - z_\frac{\alpha}{2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}},\hat{p} - z_\frac{\alpha}{2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}]$\\
+$CI = [0.823 - 1.96 \sqrt{\frac{0.823(1-0.823)}{1000}},0.823 - 1.96 \sqrt{\frac{0.823(1-0.823)}{1000}}]$\\
+$CI = [0.823 - 1.96*0.01206942418,0.823 - 1.96*0.01206942418]$\\
+$CI = [0.7993439286,0.8466560714]$\\
+$CI = [79.9\%,84.7\%]$\\
+
+\subsection*{b}
+$n = (\frac{z_\frac{\alpha}{2}}{E})^2 \hat{p}(1-\hat{p})$\\
+$n = (\frac{1.96}{0.03})^2 0.823(1-0.823)$\\
+$n = 622$
+\end{document}

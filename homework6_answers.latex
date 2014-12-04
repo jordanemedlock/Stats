@@ -1,0 +1,77 @@
+\documentclass[12pt, a4paper, oneside]{article}
+\usepackage[english]{babel}
+\usepackage{xcolor,listings}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\setlength{\parindent}{0pt}
+
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+\begin{document}
+\title{STAT345: Homework 6}
+\author{Jordan Medlock}
+\date{November 09, 2014}
+\maketitle
+
+\section*{Problem 1}
+\subsection*{a}
+Mean of the exercise group: 287.9167\\
+Mean of the no exercise group: 325.375
+
+\subsection*{b}
+Standard devi`ation of exercise group: 106.0441\\
+Standard deviation of no exercise group: 120.6754
+
+\subsection*{c}
+Median of exercise group: 265.5\\
+Median of no exercise group: 294
+
+\subsection*{d}
+Histogram of exercise group:\\
+\includegraphics*{exerciseHist.png}
+\clearpage
+
+Histogram of no exercise group:\\
+\includegraphics*{no_exerciseHist.png}
+\clearpage
+
+\subsection*{e}
+Exercise group box plot:\\
+\includegraphics*{boxPlotExercise.png}
+\clearpage
+
+No exercise group box plot:\\
+\includegraphics*{boxPlot.png}
+\clearpage
+
+\subsection*{f}
+The no exercise group has higher gene excitation because it has a higher mean and median.
+
+\section*{Problem 2}
+\subsection*{a}
+Mean of $\bar{X}_1$ is 2\\
+Variance of $\bar{X}_1$ is 0.225
+
+\subsection*{b}
+Mean of $\bar{X}_2$ is 2\\
+Variance of $\bar{X}_2$ is 0.1125
+
+\subsection*{a}
+Mean of xbar1 is 2.019538\\
+The difference between the theoretical and actual values is 0.019538
+
+\subsection*{b}
+Variance of xbar1 is 0.191268
+The difference between the theoretical and actual values is 0.033732
+
+\subsection*{a}
+Variance of xbar2 is 0.1146052
+The difference between the theoretical and actual values is 0.0021052
+
+\subsection*{b}
+There is a much smaller variance with the larger sample size because it comes closer and closer to aproximating the perfect normal distribution.
+
+\end{document}

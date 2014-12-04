@@ -1,0 +1,62 @@
+\documentclass[12pt, a4paper, oneside]{article}
+\usepackage[english]{babel}
+\usepackage{xcolor,listings}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\setlength{\parindent}{0pt}
+
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+\begin{document}
+\title{STAT345: Homework 6}
+\author{Jordan Medlock}
+\date{November 09, 2014}
+\maketitle
+
+\section*{Problem 1}
+\subsection*{1a}
+\subsection*{1b}
+\subsection*{1c}
+\subsection*{1d}
+\includegraphics*{exerciseHist.png}
+\clearpage
+\includegraphics*{no_exerciseHist.png}
+\clearpage
+
+\subsection*{1e}
+\begin{lstlisting}[language=R]
+\end{lstlisting}
+
+\textbf{Exercise Group Box Plot:} \\
+
+\includegraphics*{boxplotExercise.png}
+\clearpage
+Code used: \\
+\begin{lstlisting}[language=R]
+\end{lstlisting}
+\textbf{Non-Exercise Group Box Plot:} \\
+\includegraphics*{no_exerciseBoxPlot.png}
+\clearpage
+
+\subsection*{1f}
+
+\section*{Problem 2}
+\subsection*{2a Part 1}
+\begin{lstlisting}[language=R]
+\end{lstlisting}
+
+\subsection*{2b Part 2}
+\begin{lstlisting}[language=R]
+\end{lstlisting}
+
+\subsection*{2a Part 2}
+
+\subsection*{2b Part 2}
+
+\subsection*{2a Part 3}
+
+\subsection*{2b Part 3}
+\end{document}

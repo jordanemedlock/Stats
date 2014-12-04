@@ -1,0 +1,107 @@
+\documentclass[12pt, a4paper, oneside]{article}
+\usepackage[english]{babel}
+\usepackage{xcolor,listings}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\setlength{\parindent}{0pt}
+
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+\begin{document}
+\title{STAT345: Homework 6}
+\author{Jayson Grace}
+\date{November 09, 2014}
+\maketitle
+
+\section*{Problem 1}
+\subsection*{1a}
+Exercise Group Mean: 287.9167\\
+Non-Exercise Group Mean: 325.375
+
+\subsection*{1b}
+Exercise Group Standard Deviation: 106.0441\\
+Non-Exercise Group Standard Deviation: 120.6754 \\
+Based on our results, it would appear that there is more variability in the Non-Exercise Group.
+
+\subsection*{1c}
+Exercise Group Median: 265.5 \\
+Non-Exercise Group Median: 294
+
+\subsection*{1d}
+Exercise Group Histogram: \\
+\includegraphics*{exerciseHist.png}
+\clearpage
+Non-Exercise Group Histogram: \\
+\includegraphics*{no_exerciseHist.png}
+\clearpage
+
+\subsection*{1e}
+Code used: \\
+\begin{lstlisting}[language=R]
+boxplot(exercise, horizontal = TRUE, axes = FALSE, staplewex = 1)
+text(x=fivenum(exercise), labels =fivenum(exercise), y=1.25)
+\end{lstlisting}
+
+\textbf{Exercise Group Box Plot:} \\
+Min: 139\\
+Q1: 211\\
+Median: 265.5 \\
+Q3: 398.5\\
+Max: 436\\
+\includegraphics*{boxplotExercise.png}
+\clearpage
+Code used: \\
+\begin{lstlisting}[language=R]
+boxplot(no_exercise, horizontal = TRUE, axes = FALSE, staplewex = 1)
+text(x=fivenum(no_exercise), labels =fivenum(no_exercise), y=1.25)
+\end{lstlisting}
+\textbf{Non-Exercise Group Box Plot:} \\
+Min: 160\\
+Q1: 242.5\\
+Median: 294 \\
+Q3: 442.5\\
+Max: 485\\
+\includegraphics*{no_exerciseBoxPlot.png}
+\clearpage
+
+\subsection*{1f}
+The results reflect that the Non-Exercise group has higher gene activity. The box plot shows that the min is greater, the q1 range is greater, the median is greater, the q3 range is greater and the max is greater. Additionally we have determined that the mean is higher for the Non-Exercise group as well. Because there are no contrary results from our calculations, we can determine that the Non-Exercise group has higher gene activity overall.
+
+\section*{Problem 2}
+\subsection*{2a Part 1}
+Code used:
+\begin{lstlisting}[language=R]
+sd = 1.5/sqrt(10)
+var = sd^2
+\end{lstlisting}
+The mean of $\bar{X}_1$ is 2 \\
+The variance of $\bar{X}_1$ is 0.225
+
+\subsection*{2b Part 2}
+Code used:
+\begin{lstlisting}[language=R]
+sample=rnorm(20,mean=2,sd=1.5)
+mean(sample)
+var(sample)
+\end{lstlisting}
+The mean of $\bar{X}_2$ is 2.357418 \\
+The variance of $\bar{X}_2$ is 1.814159
+
+\subsection*{2a Part 2}
+The mean of xbar1 is 1.98364 \\
+The difference of xbar1's mean and $\bar{X}_1$'s mean is $2-1.98364 = 0.01636 $
+
+\subsection*{2b Part 2}
+The variance of xbar1 is 0.2397124 \\
+The difference of xbar1's variance and $\bar{X}_1$'s variance is $3.242735-0.2397124 = 3.0030226$
+
+\subsection*{2a Part 3}
+The variance of xbar2 is 0.1201697 \\
+The difference of xbar2's variance and $\bar{X}_2$'s variance is $1.814159-0.1201697 = 1.6939893$
+
+\subsection*{2b Part 3}
+The variance of xbar2 is smaller than the variance of xbar1 by 0.1195427
+\end{document}
