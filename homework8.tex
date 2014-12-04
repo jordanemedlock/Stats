@@ -17,57 +17,64 @@
 \begin{document}
 \title{STAT345: Homework 8}
 \author{Jordan Medlock}
-\date{November 09, 2014}
+\date{December 3, 2014}
 \maketitle
 
 \section*{Problem 1}
 \subsection*{a}
 $Z = \frac{\overbar{x}-\mu_0}{\sigma/\sqrt{n}}$\\
 $Z = \frac{19.8889-20}{0.75/\sqrt{10}}$\\
-$Z = -0.4684387308$
-$p-value = $
+$Z = -0.4684387308$\\
+$p-value = 1-0.68439$\\
+$p-value = 0.31561$\\
+I do not reject the null hypothesis. 
 
 \subsection*{b}
-$z_\frac{\alpha}{2}\frac{s}{\sqrt{n}} = 1$\\
-$1.96(\frac{2}{\sqrt{n}}) = 1$\\
-$1.96(2) = \sqrt{n}$\\
-$1.96(2)^2 = n$\\
-$15.3664 = n$\\
-$n = 16$
+$Z = \frac{\overbar{x}-\mu_0}{\sigma/\sqrt{n}}$\\
+$Z = \frac{19.8889-20}{0.75/\sqrt{10}}$\\
+$Z = -0.4684387308$\\
+$p-value = 2(1-0.68439)$\\
+$p-value = 0.63122$\\
+I still do not reject the null hypothesis.
+
+
 \section*{Problem 2}
 \subsection*{a}
-$\overbar{x} = 65.57725$\\
-$s = 4.225464$\\
-$CI = [\overbar{x} - z_\frac{\alpha}{2}\frac{s}{\sqrt{n}},\overbar{x} + z_\frac{\alpha}{2}\frac{s}{\sqrt{n}}]$\\
-$CI = [65.57725 - 1.645\frac{4.225464}{\sqrt{16}},65.57725 + 1.645\frac{4.225464}{\sqrt{16}}]$\\
-$CI = [65.57725 - 1.73772207,65.57725 + 1.73772207]$\\
-$CI = [63.83952793,67.31497207]$\\
-
-We are 90\% sure that the population's mean is between 63.83952793 and 67.31497207.
+$\overbar{x} = 98.224$\\
+$s = 0.5577335$\\
+$t_{n-1,\frac{\alpha}{2}} = 2.064$\\
+$t_0 = \frac{\overbar{x}-\mu_0}{s/\sqrt{n}}$\\
+$t_0 = \frac{98.224-98.6}{0.5577335/5}$\\
+$t_0 = -3.3707855096$\\
+The null hypothesis is incorrect. $\mu_0 \neq 98.6$.
 
 \subsection*{b}
-$\overbar{x} = 65.57725$\\
-$s = 4.225464$\\
-$CI = [\overbar{x} - z_\frac{\alpha}{2}\frac{s}{\sqrt{n}},\overbar{x} + z_\frac{\alpha}{2}\frac{s}{\sqrt{n}}]$\\
-$CI = [65.57725 - 1.96\frac{4.225464}{\sqrt{16}},65.57725 + 1.96\frac{4.225464}{\sqrt{16}}]$\\
-$CI = [65.57725 - 2.07047736,65.57725 + 2.07047736]$\\
-$CI = [63.50677264,67.64772736]$\\
-
-We are 95\% sure that the population's mean is between 63.50677264 and 67.31497207.
+$\overbar{x} = 98.224$\\
+$s = 0.5577335$\\
+$t_{n-1,\frac{\alpha}{2}} = 2.064$\\
+$t_0 = \frac{\overbar{x}-\mu_0}{s/\sqrt{n}}$\\
+$t_0 = \frac{98.224-98.6}{0.5577335/5}$\\
+$t_0 = -3.3707855096$\\
+The null hypothesis is incorrect. $\mu_0 < 98.6$.
 
 \section*{Problem 3}
 \subsection*{a}
-$\hat{p} = \frac{x}{n}$\\
-$\hat{p} = \frac{823}{1000}$\\
-$\hat{p} = 0.823$\\
-$CI = [\hat{p} - z_\frac{\alpha}{2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}},\hat{p} - z_\frac{\alpha}{2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}]$\\
-$CI = [0.823 - 1.96 \sqrt{\frac{0.823(1-0.823)}{1000}},0.823 - 1.96 \sqrt{\frac{0.823(1-0.823)}{1000}}]$\\
-$CI = [0.823 - 1.96*0.01206942418,0.823 - 1.96*0.01206942418]$\\
-$CI = [0.7993439286,0.8466560714]$\\
-$CI = [79.9\%,84.7\%]$\\
+$\mu = 1.5$
+$\overbar{x} = 1.4975$
+$\sigma = 0.01$
+$Z = -1.25$\\
+The diameter is not less that 1.5.
 
 \subsection*{b}
-$n = (\frac{z_\frac{\alpha}{2}}{E})^2 \hat{p}(1-\hat{p})$\\
-$n = (\frac{1.96}{0.03})^2 0.823(1-0.823)$\\
-$n = 622$
+$p-value = 1-\phi(z)$
+$p-value = 1-0.06681$
+$p-value = 0.93319$
+
+\section*{Problem 4}
+$\hat{p} = 0.6$
+$p_0 = 0.5$
+$z_0 = \frac{\hat{p}-p_0}{\sqrt{p_0(1-p_0)/n}}$
+$z_0 = \frac{0.6-0.5}{\sqrt{0.5(1-0.5)/500}}$
+$z_0 = 4.472135956$
+Yes more than half of the voters support term limits for politicians.
 \end{document}
